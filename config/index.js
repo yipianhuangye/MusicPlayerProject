@@ -31,7 +31,13 @@ module.exports = {
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+        "/qqMusic":{
+            "target":"https://c.y.qq.com/v8/fcg-bin/fcg_myqq_toplist.fcg",
+            "changeOrigin":true,
+            "pathRewrite":{"^/qqMusic":""}
+        }
+    },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README
     // (https://github.com/webpack/css-loader#sourcemaps)

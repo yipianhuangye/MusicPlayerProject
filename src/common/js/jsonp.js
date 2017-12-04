@@ -9,7 +9,7 @@ export default function jsonp(url, data, option) {
 			}else {
 				reject(err)
 			}
-		})
+		});;
 	})
 }
 
